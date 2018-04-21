@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 1</title>
+</head>
+<body>
+<div id="exercise2">
+    <div class="container">
+    <!-- 1) show an alert when the button gets clicked -->
+    <div>
+        <button v-on:click="say('hi')">Say hi!</button>
+    </div>
+    <br>
+    <!-- 2) Listen to the "keydown" event and store the value in a data property -->
+    <div>
+        <input type="text" v-on:keydown="showName">
+        <p>{{ name }}</p>
+
+    </div>
+    <!-- 3) Adjust the example from 2) to only fire if the beydown event is "enter"  -->
+    <input type="text" v-on:keydown.enter="showName">
+    <p>{{ name }}</p>
+    </div>
+</div>
+<script src="dist/main.js"></script>
+</body>
+</html>
